@@ -1,0 +1,5 @@
+results/*
+*.swp
+*.log
+*.t7
+*.net
