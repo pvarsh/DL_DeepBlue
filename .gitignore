@@ -3,3 +3,9 @@ results/*
 *.log
 *.t7
 *.net
+
+## LaTex auxiliary files:
+*.aux
+*.dvi
+*.log
+*.out
