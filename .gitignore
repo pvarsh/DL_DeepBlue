@@ -11,3 +11,4 @@ results/*
 *.out
 *.bbl
 *.blg
+*.synctex.gz
