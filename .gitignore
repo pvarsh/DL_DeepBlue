@@ -9,3 +9,5 @@ results/*
 *.dvi
 *.log
 *.out
+*.bbl
+*.blg
