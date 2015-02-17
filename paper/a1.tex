@@ -93,6 +93,7 @@ The abstract paragraph goes here!
 
 \section{Introduction}
 \label{intro}
+The architecture of the model provided is a convolutional neural network with two stages and a classifier. The input has 3 feature maps, each 32x32 pixels.The first stage performs convolutions using a tanh squashing function with a 5x5 filter to produce 64 feature maps to which $L^2$ pooling with pooling size 2x2 is applied. A subtractive normalization module using a Gaussian kernel of size 7 is then applied before feeding the 64 14x14 outputs to the next stage.The second stage performs the convolutions and poolings with the same filter sizes, pool sizes, number of feature maps, and normalization function as the first stage except that the 16-dim feature maps are projected into 256-dim maps before feeding the resulting data into a 2-layer non linear classifier with 128 hidden units, which uses the tanh function for non linear transformation. A Class Negative Log-Likelihood (nll) Loss function is used along with Stochastic Gradient Descent (SGD) for optimization and learning rate of 1e-3, mini-batch size of 1, and momentum 0 number of max iterations is equal to 1. Despite our attempts to improve the model, we found that the original model (as provided by Clement Farabet’s tutorial) yielded the best results.
 Using dataset cited: ~\cite{37648}
 
 \section{Architecture}
